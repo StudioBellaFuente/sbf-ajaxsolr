@@ -1,0 +1,30 @@
+
+plugin.tx_sbfajaxsolr_searchbox {
+	view {
+		# cat=plugin.tx_sbfajaxsolr_searchbox/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sbf_ajaxsolr/Resources/Private/Templates/
+		# cat=plugin.tx_sbfajaxsolr_searchbox/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sbf_ajaxsolr/Resources/Private/Partials/
+		# cat=plugin.tx_sbfajaxsolr_searchbox/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sbf_ajaxsolr/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_sbfajaxsolr_searchbox//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+plugin.tx_sbfajaxsolr_resultlist {
+	view {
+		# cat=plugin.tx_sbfajaxsolr_resultlist/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sbf_ajaxsolr/Resources/Private/Templates/
+		# cat=plugin.tx_sbfajaxsolr_resultlist/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sbf_ajaxsolr/Resources/Private/Partials/
+		# cat=plugin.tx_sbfajaxsolr_resultlist/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sbf_ajaxsolr/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_sbfajaxsolr_resultlist//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

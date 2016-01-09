@@ -1,0 +1,64 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Solr client based on https:\/\/github.com\/evolvingweb\/ajax-solr.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 4.5.0-\nextbase => 1.3-\nfluid => 1.3-\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "0.1"
+        },
+        "extensionKey": "sbf_ajaxsolr",
+        "name": "AjaxSolr",
+        "originalExtensionKey": "sbf_ajaxsolr",
+        "originalVendorName": "SBF",
+        "persons": [
+            {
+                "company": "XIMA MEDIA GmbH",
+                "email": "sebastian.gierth@xima.de",
+                "name": "Sebastian Gierth",
+                "role": "Developer"
+            },
+            {
+                "company": "StudioBellaFuente",
+                "email": "edrush@posteo.de",
+                "name": "Wolfram Eberius",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Default => searchBox",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "searchbox",
+                "name": "Ajax-Solr: Search box"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Default => resultList",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "resultlist",
+                "name": "Ajax-Solr: Result list"
+            }
+        ],
+        "vendorName": "SBF"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-01-10 12:40",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

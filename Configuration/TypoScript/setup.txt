@@ -1,0 +1,56 @@
+
+plugin.tx_sbfajaxsolr_searchbox {
+	view {
+		templateRootPaths.0 = {$plugin.tx_sbfajaxsolr_searchbox.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_sbfajaxsolr_searchbox.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_sbfajaxsolr_searchbox.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sbfajaxsolr_searchbox.persistence.storagePid}
+	}
+}
+
+plugin.tx_sbfajaxsolr_resultlist {
+	view {
+		templateRootPaths.0 = {$plugin.tx_sbfajaxsolr_resultlist.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_sbfajaxsolr_resultlist.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_sbfajaxsolr_resultlist.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sbfajaxsolr_resultlist.persistence.storagePid}
+	}
+}
+
+plugin.tx_sbfajaxsolr._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-sbf-ajaxsolr table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-sbf-ajaxsolr table th {
+		font-weight:bold;
+	}
+
+	.tx-sbf-ajaxsolr table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
