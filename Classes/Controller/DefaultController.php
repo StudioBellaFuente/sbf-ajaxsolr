@@ -31,7 +31,6 @@ namespace {
     if (class_exists('Tx_Extbase_MVC_Controller_ActionController')) {
         class Tx_SbfAjaxsolr_Controller_DefaultController extends Tx_Extbase_MVC_Controller_ActionController
         {
-
             /**
              * action searchBox
              *
@@ -51,13 +50,11 @@ namespace {
             {
 
             }
-
         }
     }
 }
 
 namespace SBF\SbfAjaxsolr\Controller {
-
 
     if (class_exists('\TYPO3\CMS\Extbase\Mvc\Controller\ActionController')) {
         /**
@@ -65,7 +62,6 @@ namespace SBF\SbfAjaxsolr\Controller {
          */
         class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         {
-
             /**
              * action searchBox
              *
@@ -85,7 +81,6 @@ namespace SBF\SbfAjaxsolr\Controller {
             {
 
             }
-
         }
     }
 }
