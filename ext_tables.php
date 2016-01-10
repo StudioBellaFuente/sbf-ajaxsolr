@@ -3,16 +3,18 @@ if (!defined('TYPO3_MODE')) {
 	die('Access denied.');
 }
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+$extensionUtilityClass = class_exists('Tx_Extbase_Utility_Extension') ? 'Tx_Extbase_Utility_Extension' : '\TYPO3\CMS\Extbase\Utility\ExtensionUtility';
+$extensionUtilityClass::registerPlugin(
 	'SBF.' . $_EXTKEY,
 	'Searchbox',
 	'Ajax-Solr: Search box'
 );
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+$extensionUtilityClass::registerPlugin(
 	'SBF.' . $_EXTKEY,
 	'Resultlist',
 	'Ajax-Solr: Result list'
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'AjaxSolr');
+$extensionManagementClass = class_exists('t3lib_extMgm') ? 't3lib_extMgm' : '\TYPO3\CMS\Core\Utility\ExtensionManagementUtility';
+$extensionManagementClass::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'AjaxSolr');

@@ -3,7 +3,8 @@ if (!defined('TYPO3_MODE')) {
 	die('Access denied.');
 }
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+$extensionUtilityClass = class_exists('Tx_Extbase_Utility_Extension') ? 'Tx_Extbase_Utility_Extension' : '\TYPO3\CMS\Extbase\Utility\ExtensionUtility';
+$extensionUtilityClass::configurePlugin(
 	'SBF.' . $_EXTKEY,
 	'Searchbox',
 	array(
@@ -16,7 +17,7 @@ if (!defined('TYPO3_MODE')) {
 	)
 );
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+$extensionUtilityClass::configurePlugin(
 	'SBF.' . $_EXTKEY,
 	'Resultlist',
 	array(
