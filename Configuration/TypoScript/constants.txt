@@ -28,3 +28,18 @@ plugin.tx_sbfajaxsolr_resultlist {
 		storagePid =
 	}
 }
+
+plugin.tx_sbfajaxsolr {
+	view {
+		# cat=plugin.tx_sbfajaxsolr/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sbf_ajaxsolr/Resources/Private/Templates/
+		# cat=plugin.tx_sbfajaxsolr/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sbf_ajaxsolr/Resources/Private/Partials/
+		# cat=plugin.tx_sbfajaxsolr/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sbf_ajaxsolr/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_sbfajaxsolr//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

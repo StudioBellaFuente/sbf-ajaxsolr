@@ -1,6 +1,4 @@
 <?php
-namespace SBF\SbfAjaxsolr\Controller;
-
 
 /***************************************************************
  *
@@ -28,30 +26,66 @@ namespace SBF\SbfAjaxsolr\Controller;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-/**
- * DefaultController
- */
-class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
-{
+namespace {
 
-    /**
-     * action renderSearchBox
-     *
-     * @return void
-     */
-    public function searchBoxAction()
-    {
+    if (class_exists('Tx_Extbase_MVC_Controller_ActionController')) {
+        class Tx_SbfAjaxsolr_Controller_DefaultController extends Tx_Extbase_MVC_Controller_ActionController
+        {
 
+            /**
+             * action searchBox
+             *
+             * @return void
+             */
+            public function searchBoxAction()
+            {
+
+            }
+
+            /**
+             * action resultList
+             *
+             * @return void
+             */
+            public function resultListAction()
+            {
+
+            }
+
+        }
     }
-    
-    /**
-     * action renderResultList
-     *
-     * @return void
-     */
-    public function resultListAction()
-    {
-        
-    }
+}
 
+namespace SBF\SbfAjaxsolr\Controller {
+
+
+    if (class_exists('\TYPO3\CMS\Extbase\Mvc\Controller\ActionController')) {
+        /**
+         * DefaultController
+         */
+        class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+        {
+
+            /**
+             * action searchBox
+             *
+             * @return void
+             */
+            public function searchBoxAction()
+            {
+
+            }
+
+            /**
+             * action resultList
+             *
+             * @return void
+             */
+            public function resultListAction()
+            {
+
+            }
+
+        }
+    }
 }

@@ -21,6 +21,21 @@ plugin.tx_sbfajaxsolr_resultlist {
 	}
 }
 
+plugin.tx_sbfajaxsolr {
+	view {
+		templateRootPath = {$plugin.tx_sbfajaxsolr.view.templateRootPath}
+		partialRootPath = {$plugin.tx_sbfajaxsolr.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_sbfajaxsolr.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sbfajaxsolr.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
 plugin.tx_sbfajaxsolr._CSS_DEFAULT_STYLE (
 	textarea.f3-form-error {
 		background-color:#FF9F9F;
